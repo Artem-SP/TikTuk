@@ -1,9 +1,7 @@
-import React from "react";
-import "./App.css";
+import { useDispatch, useSelector } from "react-redux";
+import {getTrendingFeed} from "../store/getTrendingFeed"
 
-import {getTrendingFeed} from "./store/getTrendingFeed"
-
-function App() {
+function News() {
   
 let trending = getTrendingFeed.map(it => {
 return(
@@ -37,5 +35,3 @@ return(
       </div>
   );
 }
-
-export default App;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-
+import { useDispatch, useSelector } from "react-redux";
 import {getTrendingFeed} from "./store/getTrendingFeed"
 
 function App() {
